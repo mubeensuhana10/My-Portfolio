@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects - Mubeen Suhana</title>
+    <meta name="description" content="Explore projects by Mubeen Suhana including DevOps scripts, web applications, and C++ implementations.">
+    <meta name="keywords" content="Projects, Portfolio, DevOps, C++, Web Development">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' fill='%236C5CE7'>M</text></svg>">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -12,53 +15,115 @@
     <header class="site-header">
         <div class="container">
             <div class="logo">Mubeen Suhana</div>
-            <nav class="site-nav" id="site-nav">
+            <nav class="site-nav" id="site-nav" aria-label="Main navigation">
                 <a href="index.html" class="nav-link">Home</a>
                 <a href="about.html" class="nav-link">About</a>
                 <a href="projects.html" class="nav-link active">Projects</a>
                 <a href="resume.html" class="nav-link">Resume</a>
                 <a href="contact.html" class="nav-link">Contact</a>
             </nav>
-            <div class="hamburger" id="hamburger">
+            <div class="hamburger" id="hamburger" aria-label="Toggle navigation" role="button" tabindex="0">
                 <span></span><span></span><span></span>
             </div>
         </div>
     </header>
 
-    <section class="projects-section fade-in">
+    <section class="projects-section fade-in" id="projects">
         <div class="container">
             <h2 class="section-title">Projects</h2>
             <div class="projects-grid">
-                <div class="project-card">
-                    <h3>Project Title 1</h3>
-                    <p>Short description of the project goes here.</p>
-                    <div class="tags">
-                        <span class="tag">HTML</span>
-                        <span class="tag">CSS</span>
-                        <span class="tag">JavaScript</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" class="btn btn-sm">Live Demo</a>
-                        <a href="#" class="btn btn-sm">GitHub</a>
-                    </div>
-                </div>
-                <!-- repeat for more cards -->
-                <div class="project-card">
-                    <h3>Project Title 2</h3>
-                    <p>Short description of the project goes here.</p>
-                    <div class="tags">
-                        <span class="tag">React</span>
-                        <span class="tag">Node.js</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" class="btn btn-sm">Live Demo</a>
-                        <a href="#" class="btn btn-sm">GitHub</a>
+                <!-- Portfolio Website -->
+                <div class="project-card" data-project="portfolio">
+                    <div class="project-image"><!-- placeholder graphic or icon --></div>
+                    <div class="project-content">
+                        <h3>Portfolio Website</h3>
+                        <p>A modern responsive portfolio built with HTML, CSS, and JavaScript showcasing my work and skills.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="index.html" target="_blank" class="btn btn-sm" data-modal-trigger="portfolio">Details</a>
+                            <a href="#" target="_blank" class="btn btn-sm">Live Demo</a>
+                            <a href="#" target="_blank" class="btn btn-sm">GitHub</a>
+                        </div>
                     </div>
                 </div>
-                <!-- additional cards placeholder -->
+                <!-- Mini DevOps Automation Script -->
+                <div class="project-card" data-project="devops-script">
+                    <div class="project-image"><!-- placeholder icon --></div>
+                    <div class="project-content">
+                        <h3>DevOps Automation Script</h3>
+                        <p>A Bash script automating environment setup and deployment tasks in a local dev environment.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Bash</span>
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">Linux</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank" class="btn btn-sm" data-modal-trigger="devops-script">Details</a>
+                            <a href="#" target="_blank" class="btn btn-sm">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Data Structures C++ -->
+                <div class="project-card" data-project="data-structures">
+                    <div class="project-image"><!-- placeholder icon --></div>
+                    <div class="project-content">
+                        <h3>C++ Data Structures</h3>
+                        <p>Implementations of common data structures like linked lists, stacks, queues, and trees in C++.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">C++</span>
+                            <span class="tech-tag">Algorithms</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank" class="btn btn-sm" data-modal-trigger="data-structures">Details</a>
+                            <a href="#" target="_blank" class="btn btn-sm">GitHub</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+
+    <!-- Project Detail Modals -->
+    <div class="modal" id="modal-portfolio">
+        <div class="modal-content">
+            <button class="modal-close" data-modal-close>&times;</button>
+            <h3>Portfolio Website</h3>
+            <p>This is a responsive portfolio website built using semantic HTML, CSS Grid, and vanilla JavaScript. It showcases my skills, projects, and contact information. Features include smooth scrolling, theme switcher, and mobile-first design.</p>
+            <ul>
+                <li>Responsive layout with 12-column grid</li>
+                <li>Dark/light mode toggle</li>
+                <li>CSS animations and scroll reveal</li>
+            </ul>
+        </div>
+    </div>
+    <div class="modal" id="modal-devops-script">
+        <div class="modal-content">
+            <button class="modal-close" data-modal-close>&times;</button>
+            <h3>DevOps Automation Script</h3>
+            <p>A bash script designed to automate project environment setup including installing dependencies, building Docker containers, and running tests. Useful for standardizing a development workflow.</p>
+            <ul>
+                <li>Uses Docker Compose for multi-container setup</li>
+                <li>Includes simple logging and error handling</li>
+                <li>Can be extended for CI/CD pipelines</li>
+            </ul>
+        </div>
+    </div>
+    <div class="modal" id="modal-data-structures">
+        <div class="modal-content">
+            <button class="modal-close" data-modal-close>&times;</button>
+            <h3>C++ Data Structures</h3>
+            <p>A collection of C++ implementations demonstrating linked lists, binary trees, stacks, queues, and more. Each module includes example usage and tests.</p>
+            <ul>
+                <li>Template-based classes for flexibility</li>
+                <li>Unit tests using Google Test</li>
+                <li>Documentation included</li>
+            </ul>
+        </div>
+    </div>
 
     <footer class="site-footer">
         <div class="container">

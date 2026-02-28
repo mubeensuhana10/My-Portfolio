@@ -4,53 +4,149 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mubeen Suhana – Portfolio</title>
-
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <!-- Stylesheet -->
+    <meta name="description" content="Mubeen Suhana - BCA Student & Aspiring DevOps Engineer. Explore my portfolio, projects, and skills in software development and cloud technologies.">
+    <meta name="keywords" content="DevOps, Developer, BCA Student, Cloud Technologies, Web Development">
+    <meta name="author" content="Mubeen Suhana">
+    <meta name="theme-color" content="#6C5CE7">
+    <title>Mubeen Suhana - BCA Student & Aspiring DevOps Engineer</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' fill='%236C5CE7'>M</text></svg>">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <!-- Header / Navbar -->
+    <!-- HEADER / NAVIGATION -->
     <header class="site-header">
         <div class="container">
             <div class="logo">Mubeen Suhana</div>
-            <nav class="site-nav" id="site-nav">
+            <nav class="site-nav" id="site-nav" aria-label="Main navigation">
                 <a href="index.html" class="nav-link active">Home</a>
                 <a href="about.html" class="nav-link">About</a>
                 <a href="projects.html" class="nav-link">Projects</a>
                 <a href="resume.html" class="nav-link">Resume</a>
                 <a href="contact.html" class="nav-link">Contact</a>
             </nav>
-            <div class="hamburger" id="hamburger">
-                <span></span><span></span><span></span>
+            <div class="hamburger" id="hamburger" aria-label="Toggle navigation" role="button" tabindex="0">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
     </header>
 
-    <!-- Landing Section -->
-    <section class="landing fade-in" id="home">
-        <div class="container landing-content">
-            <div class="intro-text">
-                <h1>Building clean and practical software solutions.</h1>
-                <p>BCA student with strong foundation in OOP, Data Structures and Web Development. Passionate about building scalable and efficient applications.</p>
-                <div class="buttons">
-                    <a href="projects.html" class="btn btn-primary">View Projects</a>
-                    <a href="contact.html" class="btn btn-secondary">Contact Me</a>
+    <!-- HERO SECTION -->
+    <section class="landing" id="home">
+        <div class="container">
+            <div class="landing-content">
+                <!-- Left Content -->
+                <div class="intro-text">
+                    <h1>Hi, I'm Mubeen Suhana</h1>
+                    <div class="role-subtitle">
+                        <span class="typing">BCA Student | DevOps Enthusiast</span>
+                    </div>
+                    <p class="summary">
+                        Building scalable systems with a passion for DevOps, cloud technologies, and elegant code. 
+                        I love solving complex problems and creating impactful solutions. Let's create something amazing together.
+                    </p>
+                    <div class="cta-buttons">
+                        <a href="projects.html" class="btn btn-primary">
+                            <span>View Projects</span>
+                            <span>→</span>
+                        </a>
+                        <a href="contact.html" class="btn btn-secondary">
+                            <span>Get In Touch</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Content - Decorative Image Area -->
+                <div class="intro-image-wrapper">
+                    <div class="intro-image">
+                        <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Gradient Background -->
+                            <defs>
+                                <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#6C5CE7;stop-opacity:1" />
+                                    <stop offset="50%" style="stop-color:#5A4FCF;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#4C40C2;stop-opacity:1" />
+                                </linearGradient>
+                                <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#FF8C42;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#FFC947;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            
+                            <!-- Background -->
+                            <rect width="400" height="400" fill="url(#bgGradient)"/>
+                            
+                            <!-- Decorative Elements -->
+                            <circle cx="200" cy="200" r="180" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="2"/>
+                            <circle cx="200" cy="200" r="150" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="2"/>
+                            
+                            <!-- Development Icon -->
+                            <g transform="translate(150, 120)">
+                                <!-- Code Brackets -->
+                                <text x="0" y="60" font-size="80" font-weight="bold" fill="rgba(255,255,255,0.9)">{ }</text>
+                            </g>
+                            
+                            <!-- Floating Elements -->
+                            <circle cx="100" cy="100" r="30" fill="url(#accentGradient)" opacity="0.8"/>
+                            <circle cx="300" cy="320" r="20" fill="#F8A5C2" opacity="0.7"/>
+                            <rect x="280" y="80" width="40" height="40" fill="#FFC947" opacity="0.6" rx="8"/>
+                        </svg>
+                    </div>
                 </div>
             </div>
-            <div class="intro-image">
-                <img src="assets/images/profile.jpg" alt="Mubeen Suhana" />
+
+            <!-- Scroll Indicator -->
+            <div class="scroll-indicator">
+                <svg width="24" height="40" viewBox="0 0 24 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2V38M12 38L2 28M12 38L22 28" stroke="#0F172A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- FOOTER -->
     <footer class="site-footer">
         <div class="container">
-            <p>© 2026 Mubeen Suhana</p>
-            <p>Built with ❤️ using HTML &amp; CSS</p>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <div class="footer-links">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About</a>
+                        <a href="projects.html">Projects</a>
+                        <a href="resume.html">Resume</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub" title="GitHub">
+                            <span>🔗</span>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn" title="LinkedIn">
+                            <span>💼</span>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Twitter" title="Twitter">
+                            <span>🐦</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <div class="footer-links">
+                        <a href="mailto:mubeensuhana10@gmail.com">Email</a>
+                        <a href="tel:+919591820021">Phone</a>
+                        <a href="contact.html">Contact Form</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025-2026 Mubeen Suhana. All rights reserved.</p>
+                <div class="back-to-top" id="backToTop" title="Back to Top">↑</div>
+            </div>
         </div>
     </footer>
 

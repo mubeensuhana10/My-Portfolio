@@ -4,83 +4,295 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn more about Mubeen Suhana - BCA Student, DevOps enthusiast, and aspiring software developer with a passion for building scalable systems.">
+    <meta name="keywords" content="About, BCA, DevOps, Developer, Career">
     <title>About - Mubeen Suhana</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <meta name="description" content="Learn more about Mubeen Suhana - BCA Student, DevOps enthusiast, and aspiring software developer with a passion for building scalable systems.">
+    <meta name="keywords" content="About, BCA, DevOps, Developer, Career">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' fill='%236C5CE7'>M</text></svg>">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+    <!-- HEADER / NAVIGATION -->
     <header class="site-header">
         <div class="container">
             <div class="logo">Mubeen Suhana</div>
-            <nav class="site-nav" id="site-nav">
+            <nav class="site-nav" id="site-nav" aria-label="Main navigation">
                 <a href="index.html" class="nav-link">Home</a>
                 <a href="about.html" class="nav-link active">About</a>
                 <a href="projects.html" class="nav-link">Projects</a>
                 <a href="resume.html" class="nav-link">Resume</a>
                 <a href="contact.html" class="nav-link">Contact</a>
             </nav>
-            <div class="hamburger" id="hamburger">
-                <span></span><span></span><span></span>
+            <div class="hamburger" id="hamburger" aria-label="Toggle navigation" role="button" tabindex="0">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
     </header>
 
-    <section class="about-section fade-in">
+    <!-- ABOUT SECTION -->
+    <section class="about-section" id="about">
         <div class="container">
             <h2 class="section-title">About Me</h2>
+            
             <div class="about-content">
+                <!-- Profile Image -->
                 <div class="about-image">
-                    <img src="assets/images/profile.jpg" alt="Profile photo" />
+                    <svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="profileGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#6C5CE7;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#4C40C2;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <rect width="300" height="400" fill="url(#profileGradient)"/>
+                        <circle cx="150" cy="150" r="80" fill="rgba(255,255,255,0.1)"/>
+                        <g transform="translate(50, 100)">
+                            <text x="0" y="80" font-size="120" fill="rgba(255,255,255,0.9)">👨‍💻</text>
+                        </g>
+                        <text x="150" y="320" text-anchor="middle" font-size="24" fill="rgba(255,255,255,0.8)">Mubeen Suhana</text>
+                        <text x="150" y="350" text-anchor="middle" font-size="16" fill="rgba(255,255,255,0.7)">BCA 2nd Semester</text>
+                    </svg>
                 </div>
+
+                <!-- About Text -->
                 <div class="about-text">
-                    <p>I am a BCA student with a strong foundation in Object Oriented Programming, data structures, and modern web development. I enjoy working on projects that are scalable, efficient, and user-friendly. Outside of coding, I love reading tech blogs and participating in hackathons.</p>
+                    <h2>My Story</h2>
+                    <p>
+                        Hello! I'm Mubeen Suhana, a passionate BCA (Bachelor of Computer Applications) student currently 
+                        in my 2nd semester. My journey in technology started with curiosity about how things work, and it has 
+                        evolved into a deep passion for DevOps, cloud technologies, and building scalable systems.
+                    </p>
+
+                    <h3 style="margin-top: 2rem; color: #6C5CE7;">My Learning Philosophy</h3>
+                    <p>
+                        I believe in learning by doing. Rather than just reading theory, I prefer hands-on experimentation and 
+                        building real projects. Every challenge is an opportunity to grow, and I embrace a growth mindset in everything I do. 
+                        I'm not just learning programming languages; I'm learning how to solve problems efficiently and design systems 
+                        that matter.
+                    </p>
+
+                    <h3 style="margin-top: 2rem; color: #6C5CE7;">Current Focus Areas</h3>
+                    <p>
+                        Right now, I'm deeply interested in:
+                    </p>
+                    <ul style="margin: 1rem 0 1rem 2rem; color: #64748B; line-height: 2;">
+                        <li><strong>DevOps Fundamentals:</strong> Learning containerization, CI/CD pipelines, and automation</li>
+                        <li><strong>Cloud Technologies:</strong> Understanding AWS, Azure, and infrastructure as code</li>
+                        <li><strong>Software Development:</strong> Mastering C++, Python, and JavaScript for robust applications</li>
+                        <li><strong>Problem Solving:</strong> Strengthening data structures and algorithms knowledge</li>
+                    </ul>
+
+                    <h3 style="margin-top: 2rem; color: #6C5CE7;">Why DevOps?</h3>
+                    <p>
+                        I'm drawn to DevOps because it's at the intersection of development and operations. It's about automation, 
+                        efficiency, and creating systems that are reliable and scalable. In today's world, DevOps is crucial, and I want 
+                        to be part of that transformation.
+                    </p>
+
+                    <div style="margin-top: 2rem;">
+                        <a href="assets/files/Mubeen_Resume.pdf" class="btn btn-primary">Download Resume</a>
+                    </div>
                 </div>
             </div>
 
-            <div class="skills-section">
-                <h3>Skills</h3>
+            <!-- SKILLS SECTION -->
+            <div style="margin-top: 4rem;">
+                <h2 style="text-align: center; margin-bottom: 2rem; background: linear-gradient(135deg, #6C5CE7, #FF8C42); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Skills & Technologies</h2>
+                
                 <div class="skills-grid">
                     <div class="skill-card">
-                        <h4>Programming Languages</h4>
-                        <p>Java, C++, Python, JavaScript</p>
+                        <h4>📚 Programming Languages</h4>
+                        <p>
+                            <span class="skill-badge">C</span>
+                            <span class="skill-badge">C++</span>
+                            <span class="skill-badge">Python</span>
+                            <span class="skill-badge">JavaScript</span>
+                        </p>
                     </div>
+
                     <div class="skill-card">
-                        <h4>Web Technologies</h4>
-                        <p>HTML5, CSS3, React, Node.js</p>
+                        <h4>🏢 Data Structures & Algorithms</h4>
+                        <p>
+                            <span class="skill-badge">Arrays & Lists</span>
+                            <span class="skill-badge">Trees</span>
+                            <span class="skill-badge">Graphs</span>
+                            <span class="skill-badge">Sorting</span>
+                        </p>
                     </div>
+
                     <div class="skill-card">
-                        <h4>Tools</h4>
-                        <p>Git, VS Code, Chrome DevTools</p>
+                        <h4>🌐 Web Technologies</h4>
+                        <p>
+                            <span class="skill-badge">HTML5</span>
+                            <span class="skill-badge">CSS3</span>
+                            <span class="skill-badge">JavaScript</span>
+                            <span class="skill-badge">Responsive Design</span>
+                        </p>
                     </div>
+
                     <div class="skill-card">
-                        <h4>Core Concepts</h4>
-                        <p>OOP, Data Structures, Algorithms</p>
+                        <h4>🔧 DevOps Fundamentals</h4>
+                        <p>
+                            <span class="skill-badge">Docker</span>
+                            <span class="skill-badge">Linux</span>
+                            <span class="skill-badge">Bash Scripting</span>
+                            <span class="skill-badge">Git & GitHub</span>
+                        </p>
+                    </div>
+
+                    <div class="skill-card">
+                        <h4>💻 Tools & Platforms</h4>
+                        <p>
+                            <span class="skill-badge">VS Code</span>
+                            <span class="skill-badge">Linux (Ubuntu)</span>
+                            <span class="skill-badge">Terminal/CLI</span>
+                            <span class="skill-badge">GitHub</span>
+                        </p>
+                    </div>
+
+                    <div class="skill-card">
+                        <h4>📊 Core Concepts</h4>
+                        <p>
+                            <span class="skill-badge">OOP</span>
+                            <span class="skill-badge">Database Design</span>
+                            <span class="skill-badge">Problem Solving</span>
+                            <span class="skill-badge">System Design</span>
+                        </p>
                     </div>
                 </div>
             </div>
 
-            <div class="education-section">
-                <h3>Education</h3>
-                <ul class="timeline">
-                    <li>
-                        <span class="year">2024</span>
-                        <div class="details">
-                            <h4>Bachelor of Computer Applications</h4>
-                            <p>XYZ University – CGPA: 8.6/10</p>
+            <!-- EDUCATION SECTION -->
+            <div style="margin-top: 4rem;">
+                <h2 style="text-align: center; margin-bottom: 2rem; background: linear-gradient(135deg, #6C5CE7, #FF8C42); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Education</h2>
+                
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>Bachelor of Computer Applications (BCA)</h4>
+                            <p style="color: #6C5CE7; font-weight: 600; margin-bottom: 0.5rem;">Currently Pursuing</p>
+                            <p style="margin-bottom: 0.5rem; font-size: 0.95rem;">XYZ University, India</p>
+                            <p style="font-size: 0.9rem; margin: 0;">
+                                <strong>Current Semester:</strong> 2nd Semester<br>
+                                <strong>Coursework:</strong> C++, Data Structures, Discrete Mathematical Structures, Web Development
+                            </p>
                         </div>
-                    </li>
-                    <!-- additional items if needed -->
-                </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ACHIEVEMENT SECTION -->
+            <div style="margin-top: 4rem;">
+                <h2 style="text-align: center; margin-bottom: 2rem; background: linear-gradient(135deg, #6C5CE7, #FF8C42); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Achievements & Interests</h2>
+                
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <h4>🏆 Competitive Spirit</h4>
+                        <p style="margin: 0;">
+                            Enthusiastic about participating in tech competitions, hackathons, and coding challenges. 
+                            Love collaborating with peers and learning from diverse perspectives.
+                        </p>
+                    </div>
+
+                    <div class="skill-card">
+                        <h4>📖 Continuous Learning</h4>
+                        <p style="margin: 0;">
+                            Regular reader of tech blogs, documentation, and best practices. Passionate about staying 
+                            updated with the latest trends in DevOps and cloud technologies.
+                        </p>
+                    </div>
+
+                    <div class="skill-card">
+                        <h4>🚀 Project Driven</h4>
+                        <p style="margin: 0;">
+                            Prefer learning through real-world projects and practical applications. Focused on building 
+                            a strong portfolio that demonstrates technical competence.
+                        </p>
+                    </div>
+
+                    <div class="skill-card">
+                        <h4>🤝 Team Player</h4>
+                        <p style="margin: 0;">
+                            Excellent communicator and collaborative team member. Believe in the power of teamwork and 
+                            knowledge sharing for achieving ambitious goals.
+                        </p>
+                    </div>
+
+                    <div class="skill-card">
+                        <h4>💡 Problem Solver</h4>
+                        <p style="margin: 0;">
+                            Analytical mindset with a passion for breaking down complex problems and finding elegant 
+                            solutions. Enjoy debugging and optimizing code.
+                        </p>
+                    </div>
+
+                    <div class="skill-card">
+                        <h4>🌟 Growth Mindset</h4>
+                        <p style="margin: 0;">
+                            Embrace challenges as opportunities to grow. Believe that skills can be developed through 
+                            dedication and hard work, not just talent.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- CTA SECTION -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Let's Work Together</h2>
+            <p style="font-size: 1.125rem;">Interested in collaborating? Feel free to reach out!</p>
+            <div class="cta-buttons-group">
+                <a href="contact.html" class="btn btn-outline">Get In Touch</a>
+                <a href="projects.html" class="btn btn-outline">View My Work</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
     <footer class="site-footer">
         <div class="container">
-            <p>© 2026 Mubeen Suhana</p>
-            <p>Built with ❤️ using HTML &amp; CSS</p>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <div class="footer-links">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About</a>
+                        <a href="projects.html">Projects</a>
+                        <a href="resume.html">Resume</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">🔗</a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">💼</a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Twitter">🐦</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <div class="footer-links">
+                        <a href="mailto:mubeensuhana10@gmail.com">Email</a>
+                        <a href="tel:+919591820021">Phone</a>
+                        <a href="contact.html">Contact Form</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025-2026 Mubeen Suhana. All rights reserved.</p>
+                <div class="back-to-top" id="backToTop">↑</div>
+            </div>
         </div>
     </footer>
+
     <script src="assets/js/main.js"></script>
 </body>
 </html>

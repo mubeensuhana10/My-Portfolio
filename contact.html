@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Mubeen Suhana</title>
+    <meta name="description" content="Get in touch with Mubeen Suhana for internship, collaboration or questions.">
+    <meta name="keywords" content="Contact, Email, Phone, DevOps, Internship">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' fill='%236C5CE7'>M</text></svg>">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -12,40 +15,69 @@
     <header class="site-header">
         <div class="container">
             <div class="logo">Mubeen Suhana</div>
-            <nav class="site-nav" id="site-nav">
+            <nav class="site-nav" id="site-nav" aria-label="Main navigation">
                 <a href="index.html" class="nav-link">Home</a>
                 <a href="about.html" class="nav-link">About</a>
                 <a href="projects.html" class="nav-link">Projects</a>
                 <a href="resume.html" class="nav-link">Resume</a>
                 <a href="contact.html" class="nav-link active">Contact</a>
             </nav>
-            <div class="hamburger" id="hamburger">
+            <div class="hamburger" id="hamburger" aria-label="Toggle navigation" role="button" tabindex="0">
                 <span></span><span></span><span></span>
             </div>
         </div>
     </header>
 
-    <section class="contact-section fade-in">
+    <section class="contact-section fade-in" id="contact">
         <div class="container">
-            <h2 class="section-title">Contact Me</h2>
+            <h2 class="section-title">Get In Touch</h2>
             <div class="contact-content">
                 <div class="contact-info">
-                    <p><strong>Email:</strong> <a href="mailto:mubeen@example.com">mubeen@example.com</a></p>
-                    <p><strong>LinkedIn:</strong> <a href="#">linkedin.com/in/mubeen-suhana</a></p>
-                    <p><strong>GitHub:</strong> <a href="#">github.com/mubeen</a></p>
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p><a href="mailto:mubeensuhana10@gmail.com">mubeensuhana10@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p><a href="tel:+919591820021">+91 9591820021</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">💼</div>
+                        <div class="contact-details">
+                            <h4>LinkedIn</h4>
+                            <p><a href="#" target="_blank" rel="noopener noreferrer">linkedin.com/in/mubeen-suhana</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">🐙</div>
+                        <div class="contact-details">
+                            <h4>GitHub</h4>
+                            <p><a href="#" target="_blank" rel="noopener noreferrer">github.com/mubeen</a></p>
+                        </div>
+                    </div>
                 </div>
                 <div class="contact-form">
-                    <form action="#" method="post">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required>
-
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
-
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-
+                    <form id="contactForm" novalidate>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required aria-required="true" aria-label="Your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required aria-required="true" aria-label="Your email address">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required aria-required="true" aria-label="Your message"></textarea>
+                        </div>
                         <button type="submit" class="btn btn-primary">Send Message</button>
+                        <p id="formSuccess" style="display:none; color:#2ECC71; margin-top:1rem; font-weight:600;">Thank you! Your message has been sent.</p>
                     </form>
                 </div>
             </div>

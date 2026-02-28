@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume - Mubeen Suhana</title>
+    <meta name="description" content="Resume and learning journey of Mubeen Suhana, BCA student focused on DevOps and software development.">
+    <meta name="keywords" content="Resume, CV, BCA, DevOps, Education">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' fill='%236C5CE7'>M</text></svg>">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -12,31 +15,65 @@
     <header class="site-header">
         <div class="container">
             <div class="logo">Mubeen Suhana</div>
-            <nav class="site-nav" id="site-nav">
+            <nav class="site-nav" id="site-nav" aria-label="Main navigation">
                 <a href="index.html" class="nav-link">Home</a>
                 <a href="about.html" class="nav-link">About</a>
                 <a href="projects.html" class="nav-link">Projects</a>
                 <a href="resume.html" class="nav-link active">Resume</a>
                 <a href="contact.html" class="nav-link">Contact</a>
             </nav>
-            <div class="hamburger" id="hamburger">
+            <div class="hamburger" id="hamburger" aria-label="Toggle navigation" role="button" tabindex="0">
                 <span></span><span></span><span></span>
             </div>
         </div>
     </header>
 
-    <section class="resume-section fade-in">
+    <section class="resume-section fade-in" id="resume">
         <div class="container">
-            <h2 class="section-title">Resume</h2>
+            <h2 class="section-title">Resume & Learning Journey</h2>
             <a href="assets/files/MubeenSuhana_Resume.pdf" class="btn btn-primary" download>Download Resume</a>
 
             <div class="resume-content">
                 <h3>Experience</h3>
                 <p>• Intern at ABC Company (2025) – Web development and automation projects.</p>
+                
                 <h3>Education</h3>
-                <p>BCA, XYZ University – CGPA: 8.6/10 (2024)</p>
+                <p>BCA, XYZ University – CGPA: 8.6/10 (2024 - present)</p>
+                
                 <h3>Certifications</h3>
                 <p>• Certified Java Programmer<br>• Front-End Web Development Certification</p>
+
+                <h3 style="margin-top:2rem;">Learning Journey</h3>
+                <ul class="timeline">
+                    <li class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>2023</h4>
+                            <p>Started BCA program at XYZ University. Began exploring programming with C.</p>
+                        </div>
+                    </li>
+                    <li class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>2024</h4>
+                            <p>Learned C++ and Data Structures, participated in college tech competitions.</p>
+                        </div>
+                    </li>
+                    <li class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>2025</h4>
+                            <p>Diving into DevOps fundamentals: Linux, Docker, and CI/CD pipelines.</p>
+                        </div>
+                    </li>
+                    <li class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>Future</h4>
+                            <p>Aiming for cloud certifications and internship in DevOps/Software Development.</p>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
     </section>
